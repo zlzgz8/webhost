@@ -1,0 +1,18 @@
+name: Schedule Visit Website
+ 
+on:
+  schedule:
+    # 定时表达式，例如每分钟执行一次
+    - cron: '1 * * * *'
+ 
+jobs:
+  visit-website:
+    runs-on: ubuntu-latest
+ 
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+ 
+      - name: Visit Website
+        run: |
+          curl https://webhost.zlzgz.eu.org/sub
