@@ -1,10 +1,12 @@
 name: Schedule Visit Website
  
 on:
+  workflow_dispatch:
   schedule:
-    # 定时表达式，例如每分钟执行一次
-    - cron: '1 * * * *'
- 
+    - cron: "1 * * * *"  # 每天1点运行一次
+  push:
+    branches:
+      - main 
 jobs:
   visit-website:
     runs-on: ubuntu-latest
