@@ -17,4 +17,4 @@ jobs:
  
       - name: Visit Website
         run: |
-          curl http://webhost.zlzgz.eu.org/sub
+          curl https://webhost.zlzgz.eu.org/a089c89c-d794-4153-a116-9aeeeb4fd669
